@@ -349,7 +349,7 @@ $string['courselegacyfiles_help'] = 'The course files area provides some backwar
 If you use this area to store course files, you can expose yourself to a number of privacy and security issues, as well as experiencing missing files in backups, course imports and any time content is shared or re-used.  It is therefore recommended that you do not use this area unless you really know what you are doing.';
 $string['courselegacyfiles_link'] = 'coursefiles2';
 $string['courselegacyfilesofcourse'] = 'Legacy course files: {$a}';
-$string['courseoverview'] = 'Course overview';
+$string['courseoverview'] = 'Ringkasan Kursus';
 $string['courseoverviewgraph'] = 'Course overview graph';
 $string['coursereasonforrejecting'] = 'Your reasons for rejecting this request';
 $string['coursereasonforrejectingemail'] = 'This will be emailed to the requester';
@@ -886,8 +886,8 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 See the Moodle License information page for full details:
 http://docs.moodle.org/dev/License';
-$string['grade'] = 'Grade';
-$string['grades'] = 'Grades';
+$string['grade'] = 'Nilai';
+$string['grades'] = 'Penilaian';
 $string['gravatarenabled'] = '<a href="http://www.gravatar.com/">Gravatar</a> has been enabled for this site. If you don\'t upload a profile picture Moodle will attempt to load a profile picture for you from Gravatar.';
 $string['group'] = 'Group';
 $string['groupadd'] = 'Add new group';
@@ -1242,15 +1242,15 @@ $string['mycourses'] = 'My courses';
 $string['myfiles'] = 'My private files';
 $string['myfilesmanage'] = 'Manage my private files';
 $string['privatefilesmanage'] = 'Manage private files';
-$string['myhome'] = 'Dashboard';
+$string['myhome'] = 'Rumah Saya';
 $string['mymoodledashboard'] = 'My Moodle dashboard';
-$string['myprofile'] = 'My profile';
-$string['name'] = 'Name';
+$string['myprofile'] = 'Profil Saya';
+$string['name'] = 'Nama';
 $string['namedfiletoolarge'] = 'The file \'{$a->filename}\' is too large and cannot be uploaded';
 $string['nameforlink'] = 'What do you want to call this link?';
-$string['nameforpage'] = 'Name';
-$string['navigation'] = 'Navigation';
-$string['needed'] = 'Needed';
+$string['nameforpage'] = 'Nama';
+$string['navigation'] = 'Navigasi';
+$string['needed'] = 'Dibutuhkan';
 $string['networkdropped'] = 'We have detected that your Internet connection is unreliable or has been interrupted.<br />
 Please be aware that changes may not be saved properly until your connection improves.';
 $string['never'] = 'Never';

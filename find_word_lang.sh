@@ -1,6 +1,6 @@
 for x in `cat php_lang.lst` 
 do
-	find=`grep "Submission comments" $x` 
+	find=`grep "Ganti" $x` 
 	if [ "$find" != "" ] 
 	then
 		echo $x

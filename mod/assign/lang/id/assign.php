@@ -339,7 +339,7 @@ $string['nosubmissionsacceptedafter'] = 'No submissions accepted after ';
 $string['noteam'] = 'Not a member of any group';
 $string['noteam_desc'] = 'This assignment requires submission in groups. You are not a member of any group, so you cannot create a submission. Please contact your teacher to be added to a group.';
 $string['noteamgrader'] = 'Not a member of any group, so unable to make submissions.';
-$string['notgraded'] = '#Not graded';
+$string['notgraded'] = 'Belum dinilai';
 $string['notgradedyet'] = 'Not graded yet';
 $string['notsubmittedyet'] = 'Not submitted yet';
 $string['notifications'] = 'Notifications';
@@ -353,7 +353,7 @@ $string['numberofteams'] = 'Groups';
 $string['offline'] = 'No online submissions required';
 $string['open'] = 'Open';
 $string['outof'] = '{$a->current} out of {$a->total}';
-$string['overdue'] = '<font color="red">Assignment is overdue by: {$a}</font>';
+$string['overdue'] = '<font color="red">Tugas terlambat selama: {$a}</font>';
 $string['override'] = 'Override';
 $string['overridedeletegroupsure'] = 'Are you sure you want to delete the override for group {$a}?';
 $string['overridedeleteusersure'] = 'Are you sure you want to delete the override for user {$a}?';
@@ -462,7 +462,7 @@ You can see the status of your assignment submission:
 $string['submissionreceipthtml'] = '<p>You have submitted an assignment submission for \'<i>{$a->assignment}</i>\'.</p>
 <p>You can see the status of your <a href="{$a->url}">assignment submission</a>.</p>';
 $string['submissionreceiptsmall'] = 'You have submitted your assignment submission for {$a->assignment}';
-$string['submissionslocked'] = 'This assignment is not accepting submissions';
+$string['submissionslocked'] = 'Tugas ini tidak menerima Laporan/Jawaban';
 $string['submissionslockedshort'] = 'Submission changes not allowed';
 $string['submissions'] = 'Submissions';
 $string['submissionsnotgraded'] = 'Submissions not graded: {$a}';
@@ -502,7 +502,7 @@ $string['teamsubmission_help'] = 'If enabled students will be divided into group
 $string['teamsubmissiongroupingid'] = 'Grouping for student groups';
 $string['teamsubmissiongroupingid_help'] = 'This is the grouping that the assignment will use to find groups for student groups. If not set - the default set of groups will be used.';
 $string['textinstructions'] = 'Assignment instructions';
-$string['timemodified'] = 'Last modified';
+$string['timemodified'] = 'Terakhir diperbaharui ';
 $string['timeremaining'] = 'Waktu tersisa';
 $string['timeremainingcolon'] = 'Time remaining: {$a}';
 $string['togglezoom'] = 'Zoom in/out of region';

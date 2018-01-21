@@ -85,6 +85,7 @@ echo $OUTPUT->box_start('generalbox');
 
 $mform->display();
 echo $OUTPUT->box_end();
-echo "<center>Keterangan : Di sini Hanya tempat file PRIBADI Anda </center><br>";
-echo "<center>Keterangan : Di sini bukan tempat mengirim Laporan</center><br>";
+echo "<font color=\"red\"><center>Keterangan : Di sini Hanya tempat file PRIBADI Anda </center><br>";
+echo "<center>Di sini BUKAN tempat mengirim Laporan/Tugas Kuliah</center><br>";
+echo "</font>";
 echo $OUTPUT->footer();
