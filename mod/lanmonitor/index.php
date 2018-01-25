@@ -53,7 +53,7 @@ $PAGE->set_pagelayout('incourse');
 echo $OUTPUT->header();
 echo $OUTPUT->heading($strname);
 
-if (! $lanmonitors = get_all_instances_in_course('lanmonitor', $course)) {
+/*if (! $lanmonitors = get_all_instances_in_course('lanmonitor', $course)) {
     notice(get_string('nolanmonitors', 'lanmonitor'), new moodle_url('/course/view.php', array('id' => $course->id)));
 }
 
@@ -94,6 +94,20 @@ foreach ($modinfo->instances['lanmonitor'] as $cm) {
     $table->data[] = $row;
 }
 
-echo html_writer::table($table);
+echo html_writer::table($table);*/
+//exec('ls -la', $outputArray);
+//exec('nmap --help', $outputArray);
+$cmd="arp -an";
+$cmd.=" ";
+$outputArray=array();
+exec($cmd, $outputArray);
+print_r($outputArray);
+echo "<br>";
+
+$cmd="nmap -T5 -sT -p22 --host-timeout 1 --max-retries 1 localhost 192.168.43.102 192.168.43.1 ";
+
+$outputArray=array();
+exec($cmd, $outputArray);
+print_r($outputArray);
 
 echo $OUTPUT->footer();
