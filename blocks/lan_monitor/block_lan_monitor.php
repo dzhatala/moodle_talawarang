@@ -24,10 +24,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-class block_newblock extends block_base {
+class block_lan_monitor extends block_base {
 
     function init() {
-        $this->title = get_string('pluginname', 'block_newblock');
+        $this->title = get_string('pluginname', 'block_lan_monitor');
     }
 
     function get_content() {
