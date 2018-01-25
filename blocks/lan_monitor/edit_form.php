@@ -1,6 +1,6 @@
 <?php
 
-class block_newblock_edit_form extends block_edit_form {
+class block_lan_monitor_edit_form extends block_edit_form {
 
     protected function specific_definition($mform) {
 
