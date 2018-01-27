@@ -99,19 +99,13 @@ echo html_writer::table($table);*/
 //exec('nmap --help', $outputArray);
 $cmd="arp -an";
 $cmd.=" ";
-$outputArray=array();
 exec($cmd, $outputArray);
 print_r($outputArray);
 echo "<br>";
 
-//$cmd="nmap -T5 -sT -p22 --host-timeout 1 --max-retries 1 localhost 192.168.43.102 192.168.43.1  ";
-$cmd="nmap -T5 -sT -p22 --host-timeout 1 --max-retries 1 localhost ";
-
-$outputArray=array();
-exec($cmd, $outputArray);
-print_r($outputArray);
-
-$data=array();
-echo $OUTPUT->render_from_template('mod_lanmonitor/recipe', $data);
+$cmd="nmap";
+$cmd.=" ";
+//exec('nmap --help', $outputArray);
+//print_r($outputArray);
 
 echo $OUTPUT->footer();
