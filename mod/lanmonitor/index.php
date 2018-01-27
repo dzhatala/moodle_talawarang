@@ -34,6 +34,7 @@ $id = required_param('id', PARAM_INT); // Course.
 
 $course = $DB->get_record('course', array('id' => $id), '*', MUST_EXIST);
 
+require_login();
 require_course_login($course);
 
 $params = array(
@@ -97,11 +98,16 @@ foreach ($modinfo->instances['lanmonitor'] as $cm) {
 echo html_writer::table($table);*/
 //exec('ls -la', $outputArray);
 //exec('nmap --help', $outputArray);
+$lm_debug=1;
 $cmd="arp -an";
 $cmd.=" ";
 $outputArray=array();
 exec($cmd, $outputArray);
-print_r($outputArray);
+//print_r($outputArray);
+if($lm_debug)
+    foreach ($outputArray as $key => $value) {
+        echo $value."<BR>\n";
+    }
 echo "<br>";
 
 //$cmd="nmap -T5 -sT -p22 --host-timeout 1 --max-retries 1 localhost 192.168.43.102 192.168.43.1  ";
@@ -109,9 +115,14 @@ $cmd="nmap -T5 -sT -p22 --host-timeout 1 --max-retries 1 localhost ";
 
 $outputArray=array();
 exec($cmd, $outputArray);
-print_r($outputArray);
+//print_r($outputArray);
+if($lm_debug)
+    foreach ($outputArray as $key => $value) {
+        echo $value."<BR>\n";
+    }
 
 $data=array();
-echo $OUTPUT->render_from_template('mod_lanmonitor/recipe', $data);
+//echo $OUTPUT->render_from_template('mod_lanmonitor/recipe', $data);
+echo $OUTPUT->render_from_template('mod_lanmonitor/lab_r', $data);
 
 echo $OUTPUT->footer();
