@@ -111,7 +111,8 @@ if($lm_debug)
 echo "<br>";
 
 //$cmd="nmap -T5 -sT -p22 --host-timeout 1 --max-retries 1 localhost 192.168.43.102 192.168.43.1  ";
-$cmd="nmap -T5 -sT -p22 --host-timeout 1 --max-retries 1 localhost ";
+//$cmd="nmap -T5 -sT -p22 --host-timeout 1 --max-retries 1 localhost ";
+$cmd="nmap -T5 -sT -p22 --host-timeout 5 --max-retries 2 localhost 192.168.1.23 192.168.1.23  ";
 
 $outputArray=array();
 exec($cmd, $outputArray);
